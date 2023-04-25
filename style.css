@@ -1,0 +1,352 @@
+body {
+  margin-top: 5px;
+}
+
+.top-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background-color: rgb(247, 61, 28);
+  z-index: 1;
+}
+
+.drip {
+  position: fixed;
+  border-radius: 15px;
+  width: 15px;
+  height: 0;
+  background: linear-gradient(to right, rgba(255, 142, 108, 0.705), rgb(255, 0, 0));
+  background-color: #d82828;
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+}
+
+.drip1 {
+  left: 20%;
+  -webkit-animation: drip1 10s linear infinite;
+          animation: drip1 10s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -5s);
+          animation-delay: calc(var(--scroll) * -5s);
+}
+
+.drip2 {
+  left: 30%;
+  -webkit-animation: drip2 1.5s linear infinite;
+          animation: drip2 1.5s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+.drip3 {
+  left: 40%;
+  -webkit-animation: drip3 3s linear infinite;
+          animation: drip3 3s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+.drip4 {
+  left: 50%;
+  -webkit-animation: drip4 7s linear infinite;
+          animation: drip4 7s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+.drip5 {
+  left: 60%;
+  -webkit-animation: drip5 4s linear infinite;
+          animation: drip5 4s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+.drip6 {
+  left: 70%;
+  -webkit-animation: drip6 4s linear infinite;
+          animation: drip6 4s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+.drip7 {
+  left: 80%;
+  -webkit-animation: drip7 4s linear infinite;
+          animation: drip7 4s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+.drip8 {
+  left: 90%;
+  -webkit-animation: drip8 4s linear infinite;
+          animation: drip8 4s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+.drip9 {
+  left: 95%;
+  -webkit-animation: drip9 4s linear infinite;
+          animation: drip9 4s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+.drip10 {
+  right: 90%;
+  -webkit-animation: drip10 4s linear infinite;
+          animation: drip10 4s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+@-webkit-keyframes drip1 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 750px;
+  }
+}
+
+@keyframes drip1 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 750px;
+  }
+}
+@-webkit-keyframes drip2 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 405px;
+  }
+}
+@keyframes drip2 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 405px;
+  }
+}
+@-webkit-keyframes drip3 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 1400px;
+  }
+}
+@keyframes drip3 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 1400px;
+  }
+}
+@-webkit-keyframes drip4 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 320px;
+  }
+}
+@keyframes drip4 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 320px;
+  }
+}
+@-webkit-keyframes drip5 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 600px;
+  }
+}
+@keyframes drip5 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 600px;
+  }
+}
+@-webkit-keyframes drip6 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 750px;
+  }
+}
+@keyframes drip6 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 750px;
+  }
+}
+@-webkit-keyframes drip7 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 1300px;
+  }
+}
+@keyframes drip7 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 1300px;
+  }
+}
+@-webkit-keyframes drip8 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 580px;
+  }
+}
+@keyframes drip8 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 580px;
+  }
+}
+@-webkit-keyframes drip9 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 1480px;
+  }
+}
+@keyframes drip9 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 1480px;
+  }
+}
+@-webkit-keyframes drip10 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 1100px;
+  }
+}
+@keyframes drip10 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 1100px;
+  }
+}
+.drip-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.drip-container.animate .drip {
+  height: 90%;
+  -webkit-animation: drip 6s linear infinite;
+          animation: drip 6s linear infinite;
+}
+
+@-webkit-keyframes drip {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 90%;
+  }
+}
+
+@keyframes drip {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 90%;
+  }
+}
+.drip-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.drip-container.animate .drip {
+  height: 90%;
+  -webkit-animation: drip 6s linear infinite;
+          animation: drip 6s linear infinite;
+}
+
+@keyframes drip {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 90%;
+  }
+}
+.drip-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.drip-container.animate .drip {
+  height: 90%;
+  -webkit-animation: drip 6s linear infinite;
+          animation: drip 6s linear infinite;
+}
+
+@keyframes drip {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
