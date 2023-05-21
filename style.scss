@@ -7,14 +7,9 @@ body {
 .top-line {
 @include top-line
 }
+
 .drip {
-    position: fixed;
-    border-radius: 15px;
-    width: 15px;
-    height: 0;
-    background: linear-gradient(to right, rgba(255, 142, 108, 0.705), rgb(255, 0, 0));;
-    background-color: #d82828;
-    animation: rotate 1s linear infinite;
+  @include drip
   }
   
   .drip1 {
