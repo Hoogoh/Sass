@@ -9,76 +9,67 @@ body {
 }
 
 .drip {
-  @include drip
+    @include drip;
+    animation-play-state: paused;
   }
   
   .drip1 {
     left: 20%;
-    animation: drip1 10s linear infinite;
-    animation-play-state: paused;
+    animation: drip1 6s linear forwards;
     animation-delay: calc(var(--scroll) * -5s);
   }
   
   .drip2 {
     left: 30%;
-    animation: drip2 1.5s linear infinite;
-    animation-play-state: paused;
+    animation: drip2 4s linear forwards;
     animation-delay: calc(var(--scroll) * -1s);
   }
   
   .drip3 {
     left: 40%;
-    animation: drip3 3s linear infinite;
-    animation-play-state: paused;
+    animation: drip3 5s linear forwards;
     animation-delay: calc(var(--scroll) * -1s);
   }
   
   .drip4 {
     left: 50%;
-    animation: drip4 7s linear infinite;
-    animation-play-state: paused;
+    animation: drip4 1s linear forwards;
     animation-delay: calc(var(--scroll) * -1s);
   }
   
   .drip5 {
     left: 60%;
-    animation: drip5 4s linear infinite;
-    animation-play-state: paused;
+    animation: drip5 4s linear forwards;
     animation-delay: calc(var(--scroll) * -1s);
   }
   
   .drip6 {
     left: 70%;
-    animation: drip6 4s linear infinite;
-    animation-play-state: paused;
+    animation: drip6 4s linear forwards;
     animation-delay: calc(var(--scroll) * -1s);
   }
   
   .drip7 {
     left: 80%;
-    animation: drip7 4s linear infinite;
-    animation-play-state: paused;
+    animation: drip7 4s linear forwards;
     animation-delay: calc(var(--scroll) * -1s);
   }
   
   .drip8 {
     left: 90%;
-    animation: drip8 4s linear infinite;
-    animation-play-state: paused;
+    animation: drip8 9s linear forwards;
     animation-delay: calc(var(--scroll) * -1s);
   }
   
   .drip9 {
     left: 95%;
-    animation: drip9 4s linear infinite;
-    animation-play-state: paused;
+    animation: drip9 4s linear forwards;
     animation-delay: calc(var(--scroll) * -1s);
   }
   
   .drip10 {
     right: 90%;
-    animation: drip10 4s linear infinite;
-    animation-play-state: paused;
+    animation: drip10 2s linear forwards;
     animation-delay: calc(var(--scroll) * -1s);
   }
   
@@ -87,7 +78,7 @@ body {
       height: 0%;
     }
     100% {
-      height: 750px;
+      height: 650px;
     }
   }
   
@@ -105,7 +96,7 @@ body {
       height: 0%;
     }
     100% {
-      height: 1400px;
+      height: 500px;
     }
   }
   
@@ -123,7 +114,7 @@ body {
       height: 0%;
     }
     100% {
-      height: 600px;
+      height: 250px;
     }
   }
     
@@ -132,7 +123,7 @@ body {
         height: 0%;
       }
       100% {
-        height: 750px;
+        height: 650px;
       }
     }
     
@@ -141,7 +132,7 @@ body {
         height: 0%;
       }
       100% {
-        height: 1300px;
+        height: 600px;
       }
     }
     
@@ -150,7 +141,7 @@ body {
         height: 0%;
       }
       100% {
-        height: 580px;
+        height: 480px;
       }
     }
     
@@ -159,7 +150,7 @@ body {
         height: 0%;
       }
       100%{ 
-          height: 1480px;
+          height: 600px;
       }
     }
     @keyframes drip10 {
@@ -167,7 +158,7 @@ body {
         height: 0%;
       }
       100%{ 
-          height: 1100px;
+          height: 200px;
       }
     }
     .drip-container {
@@ -190,12 +181,13 @@ body {
       }
       .drip-container {
         height: 100%;
+        position: relative;
         overflow: hidden;
       }
       
       .drip-container.animate .drip {
         height: 90%;
-        animation: drip 6s linear infinite;
+        animation-play-state:running ;
       }
       
       @keyframes drip {
@@ -246,3 +238,38 @@ h1 {
 .image-container {
   @include image-layout
 }
+
+/* Placeholder styles */
+#placeholder {
+  height: 2000px; /* Adjust to simulate scrolling */
+}
+
+/* Fade-in image styles */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+@keyframes fadeAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-on-scroll {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+}
+
+
