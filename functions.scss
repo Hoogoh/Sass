@@ -24,14 +24,18 @@
     background-color: rgb(247, 61, 28);
     z-index: 1;
   }
+
+  $primary-color: rgba(255, 142, 108, 0.705);
+$secondary-color: rgb(255, 0, 0);
+$background-color: #d82828;
   
   @mixin drip {
     position: absolute;
     border-radius: 15px;
     width: 15px;
     height: 0;
-    background: linear-gradient(to right, rgba(255, 142, 108, 0.705), rgb(255, 0, 0));
-    background-color: #d82828;
+    background: linear-gradient(to right, $primary-color, $secondary-color);
+    background-color: $background-color;
     animation: rotate 1s linear infinite;
   }
   
