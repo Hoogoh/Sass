@@ -239,12 +239,10 @@ h1 {
   @include image-layout
 }
 
-/* Placeholder styles */
 #placeholder {
-  height: 2000px; /* Adjust to simulate scrolling */
+  height: 350px;
 }
 
-/* Fade-in image styles */
 .fade-in {
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -265,7 +263,7 @@ h1 {
 
 .fade-in-on-scroll {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.24s ease-in-out;
 }
 
 .fade-in-on-scroll.visible {
@@ -273,3 +271,77 @@ h1 {
 }
 
 
+$primary-color: #333;
+$hover-color: #111;
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $primary-color;
+
+  li {
+    float: left;
+
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+  }
+}
+button {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $primary-color;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+  background-color: $hover-color;
+}
+
+$back-to-top-arrow-size: 60px;
+$back-to-top-arrow-color: rgb(255, 255, 255);
+$back-to-top-arrow-background-color: rgb(99, 167, 61);
+$back-to-top-arrow-hover-background-color: rgb(44, 82, 26);
+$back-to-top-arrow-transition-duration: 0.3s;
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: $back-to-top-arrow-size;
+  height: $back-to-top-arrow-size;
+  background-color: $back-to-top-arrow-background-color;
+  color: $back-to-top-arrow-color;
+  text-align: center;
+  line-height: $back-to-top-arrow-size;
+  cursor: pointer;
+  transition: background-color $back-to-top-arrow-transition-duration;
+}
+
+#back-to-top:hover {
+  background-color: $back-to-top-arrow-hover-background-color;
+}
+
+#back-to-top span {
+  display: block;
+  font-size: 12px;
+  line-height: 1;
+}

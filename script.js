@@ -13,7 +13,6 @@ window.addEventListener(
     var rect = element.getBoundingClientRect();
     var windowHeight = window.innerHeight || document.documentElement.clientHeight;
   
-    // Adjust the visibility trigger threshold as needed
     var threshold = windowHeight * 0.8;
   
     return (
@@ -48,4 +47,32 @@ window.addEventListener(
         dripContainer.classList.add('animate');
       }
     }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var backToTop = document.getElementById("back-to-top");
+      backToTop.addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: "smooth"});
+      });
+    });
     
+    document.addEventListener("DOMContentLoaded", function() {
+      const scroll = new SmoothScroll();
+
+      window.addEventListener("scroll", function() {
+        const backToTopButton = document.getElementById("back-to-top");
+
+        if (window.scrollY > 500) {
+          backToTopButton.classList.add("show");
+        } else {
+          backToTopButton.classList.remove("show");
+        }
+      });
+    });
+
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
